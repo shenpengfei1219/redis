@@ -1,4 +1,4 @@
-module github.com/go-redis/redis/v8
+module github.com/shenpengfei1219/redis/v8
 
 go 1.13
 
