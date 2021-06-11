@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-redis/redis/v8/internal"
-	"github.com/go-redis/redis/v8/internal/pool"
-	"github.com/go-redis/redis/v8/internal/proto"
+	"github.com/shenpengfei1219/redis/v8/internal"
+	"github.com/shenpengfei1219/redis/v8/internal/pool"
+	"github.com/shenpengfei1219/redis/v8/internal/proto"
 )
 
 // PubSub implements Pub/Sub commands as described in
@@ -423,7 +423,7 @@ func (c *PubSub) getContext() context.Context {
 // is blocked full for 30 seconds the message is dropped.
 // Receive* APIs can not be used after channel is created.
 //
-// go-redis periodically sends ping messages to test connection health
+// shenpengfei1219 periodically sends ping messages to test connection health
 // and re-subscribes if ping can not not received for 30 seconds.
 func (c *PubSub) Channel(opts ...ChannelOption) <-chan *Message {
 	c.chOnce.Do(func() {

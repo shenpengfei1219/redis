@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/shenpengfei1219/redis/v8"
 )
 
 func CmdString(cmd redis.Cmder) string {
